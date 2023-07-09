@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  background: hsl(179, 100%, 13%);
+}
+
+main {
+  max-width: 35rem;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: hsl(184, 100%, 22%);
+  padding: 10px;
+  border-radius: 20px;
+}
+
+h1, p {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: hsl(0, 0%, 95%);
+}
+
+.container {
+  width: 80%;
+}
+
+label {
+  color: hsl(0, 0%, 95%);
+}
+
+.lists {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list {
+  width: 35%;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown, .radio, .checkbox {
+  display: grid;
+  margin-top: 2rem;
+}
+
+.dropdown-label, .radio-label, .checkbox-label {
+  margin-bottom: 0.5rem;
+}
+
+.dropdown-label span {
+  font-size: 12px;
+}
+
+.radio-option {
+  display: flex;
+}
+
+.radio-option label, .checkbox-option label {
+  margin-left: 10px;
+}
+
+.text-area {
+  margin-top: 2rem;
+}
+
+textarea {
+  margin-top: 0.5rem;
+}
+
+button {
+  margin-top: 1rem;
+  width: 40%;
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+  color: hsl(184, 100%, 22%);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: hsl(179, 100%, 13%);
+  color: hsl(0, 0%, 95%);
+}
+
+@media screen and (max-width: 600px) {
+    .list {
+        width: 48%;
+    }
+
+    label {
+        font-size: 0.8rem;
+    }
+}
